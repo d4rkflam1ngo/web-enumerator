@@ -17,6 +17,8 @@ parser = argparse.ArgumentParser(description="A simple program which enumerates 
 # Create the arguments
 parser.add_argument("-u", "--url", type=url_type, metavar="", help="url of the site to enumerate", required=True)
 parser.add_argument("-v", "--verbose", action="store_true", help="enable verbose mode", required=False)
+parser.add_argument("-q", "--quick", action="store_true", help="quick scan mode", required=False)
+parser.add_argument("-a", "--aggressive", action="store_true", help="aggressive/full scan mode", required=False)
 
 # Parse the arguments
 args = parser.parse_args()
