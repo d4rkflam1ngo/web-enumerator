@@ -2,6 +2,7 @@
 import argparse
 import re
 from scripts.directory import directory
+from scripts.subdomain import subdomain
 
 # Create a function which checks if the given url is valid
 def url_type(arg_value, pattern=re.compile("http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+")):
@@ -24,3 +25,4 @@ parser.add_argument("-a", "--aggressive", action="store_true", help="aggressive/
 args = parser.parse_args()
 
 directory(args.url, args.verbose)
+subdomain(args.url, args.verbose)

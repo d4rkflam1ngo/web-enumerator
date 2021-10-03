@@ -3,7 +3,7 @@ import requests
 
 def directory(url, verbose):
     # Read words from wordlist
-    wordlist = open("wordlists/directory-common.txt", "r")
+    wordlist = open("wordlists/directory-regular.txt", "r")
 
     # File extensions to check
     extensions = ["", ".txt", ".php", ".html", ".js"]

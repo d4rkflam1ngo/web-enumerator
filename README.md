@@ -3,6 +3,7 @@ A simple program which enumerates web applications using a combination of custom
 
 ### Currently Supported Features
 * Website directory enumeration
+* Subdirectory enumeration (Has Issues)
 
 ### Requirements
 
