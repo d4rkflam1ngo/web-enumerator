@@ -24,5 +24,6 @@ parser.add_argument("-a", "--aggressive", action="store_true", help="aggressive/
 # Parse the arguments
 args = parser.parse_args()
 
-directory(args.url, args.verbose)
-subdomain(args.url, args.verbose)
+# Run the functions
+directory(args.url, args.verbose, args.quick, args.aggressive)
+subdomain(args.url, args.verbose, args.quick, args.aggressive)
